@@ -173,3 +173,78 @@ body {
   color: white;
   text-decoration: none;
 }
+
+/*VERSION ESCRITORIO */
+
+@media (min-width: 576px) {
+  body {
+    grid-template-areas:
+      "navbar filters"
+      "navbar main"
+      "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 5px 0;
+  }
+
+  .filters {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px 30px;
+  }
+
+  .filters select {
+    width: 200px;
+  }
+
+ 
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    align-items: start;
+  }
+
+  .card {
+    max-width: 100%; 
+  }
+
+  .pagination {
+    grid-column: 1 / -1;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 15px 30px;
+  }
+}
