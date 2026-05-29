@@ -5,3 +5,49 @@
   font-family: Arial, sans-serif;
 }
 
+body {
+  background-color: #f0f0f0;
+  display: grid;
+
+  /* Layout Base: Versión Móvil */
+  grid-template-areas:
+    "navbar"
+    "filters"
+    "main"
+    "footer";
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Versión Móvil*/
+
+/* --- 1. Menú de Navegación --- */
+.navbar {
+  grid-area: navbar;
+  background-color: #004b8d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand h1 {
+  font-size: 1.2rem;
+}
+
+.menu-hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none;
+  list-style: none;
+}
