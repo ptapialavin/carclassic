@@ -20,7 +20,7 @@ Desktop (≥576px): layout en grid con menú lateral y cards en grilla
 Shell📁 Cars-Classics│├── index.html└── assets    ├── css    │   └── style.css    └── img        ├── fiat500.jpg        ├── subaruimprezawrxt.jpg        ├── AudiA4.jpg        └── Kiario.jpgMostrar más líneas
 
 🚀 Ejecutar
-Abrir Aqui: 
+Abrir Aqui: https://ptapialavin.github.io/carclassic/ 
 
 🎓 Contexto
 Ejercicio práctico del módulo de Media Queries en CSS Avanzado, enfocado en la creación de layouts adaptables.
