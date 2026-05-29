@@ -223,7 +223,6 @@ body {
     width: 200px;
   }
 
- 
   .main-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -233,7 +232,7 @@ body {
   }
 
   .card {
-    max-width: 100%; 
+    max-width: 100%;
   }
 
   .pagination {
